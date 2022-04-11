@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9aaa99e8_f00d7e83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001589
+      },
+      "writtenOn": "2022-04-11T14:52:03Z",
+      "side": 1,
+      "message": "Looks good, added some comments",
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ee69f59_d1f57430",
+        "filename": "apexpolicyversion/LinkMonitor/models/LinkFailureLogic.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1001589
+      },
+      "writtenOn": "2022-04-11T14:52:03Z",
+      "side": 1,
+      "message": "Is this loop necessary?",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 29
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6460841f_fdb15b23",
+        "filename": "goversion/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1001589
+      },
+      "writtenOn": "2022-04-11T14:52:03Z",
+      "side": 1,
+      "message": "Should this be \"where the message\"?",
+      "range": {
+        "startLine": 3,
+        "startChar": 287,
+        "endLine": 3,
+        "endChar": 314
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c36a78d_2e56a4fc",
+        "filename": "goversion/internal/ves/decoder.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1001589
+      },
+      "writtenOn": "2022-04-11T14:52:03Z",
+      "side": 1,
+      "message": "I wonder if it is necessary to use pointers here as you are not mutating the data and the other related function is not using pointers",
+      "range": {
+        "startLine": 46,
+        "startChar": 37,
+        "endLine": 46,
+        "endChar": 46
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    }
+  ]
+}
