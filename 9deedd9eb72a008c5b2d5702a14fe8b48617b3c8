@@ -58,6 +58,30 @@
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a8582bd_abe87465",
+        "filename": "apexpolicyversion/LinkMonitor/models/LinkFailureLogic.js",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000201
+      },
+      "writtenOn": "2022-04-12T05:53:22Z",
+      "side": 1,
+      "message": "I am afraid I have no idea if this is necessary or not. This versio of the use case was created by Lathish.",
+      "parentUuid": "3ee69f59_d1f57430",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 29
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6460841f_fdb15b23",
@@ -81,6 +105,30 @@
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a66ba1d4_e221e233",
+        "filename": "goversion/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000201
+      },
+      "writtenOn": "2022-04-12T05:53:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6460841f_fdb15b23",
+      "range": {
+        "startLine": 3,
+        "startChar": 287,
+        "endLine": 3,
+        "endChar": 314
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c36a78d_2e56a4fc",
@@ -94,6 +142,30 @@
       "writtenOn": "2022-04-11T14:52:03Z",
       "side": 1,
       "message": "I wonder if it is necessary to use pointers here as you are not mutating the data and the other related function is not using pointers",
+      "range": {
+        "startLine": 46,
+        "startChar": 37,
+        "endLine": 46,
+        "endChar": 46
+      },
+      "revId": "9deedd9eb72a008c5b2d5702a14fe8b48617b3c8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0db09527_0e95deb8",
+        "filename": "goversion/internal/ves/decoder.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000201
+      },
+      "writtenOn": "2022-04-12T05:53:22Z",
+      "side": 1,
+      "message": "Maybe I made an unnecessary memory optimisation? There can be quite a lot of VES messages and they can contain quite a lot of information, so that is why they are passed by reference instead of by value. Will change so that GetFaultMessages also returns a pointer.",
+      "parentUuid": "6c36a78d_2e56a4fc",
       "range": {
         "startLine": 46,
         "startChar": 37,
