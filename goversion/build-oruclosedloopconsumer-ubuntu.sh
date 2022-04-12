@@ -34,5 +34,7 @@ go get github.com/stretchr/testify/mock@v1.7.0
 
 go-acc ./... --ignore mocks
 
+sed -i -e 's/oransc\.org\/usecase\/oruclosedloop/goversion/' coverage.txt
+
 cp coverage.txt $curdir
 echo "--> build-oruclosedloopconsumer-ubuntu.sh ends"
