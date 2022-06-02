@@ -16,13 +16,13 @@ RUN go build -o /docker-oruclosedloop
 ##
 ## Deploy
 ##
-FROM gcr.io/distroless/base-debian10
+FROM gcr.io/distroless/base-debian11
 
 WORKDIR /
 
 ## Copy from "build" stage
 COPY --from=build /docker-oruclosedloop .
-COPY --from=build /app/security/ ./security/
+COPY --from=build /app/security/* /security/
 COPY --from=build /app/o-ru-to-o-du-map.csv .
 
 USER nonroot:nonroot

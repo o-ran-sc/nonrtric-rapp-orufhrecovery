@@ -38,6 +38,7 @@ import (
 )
 
 const jobId = "14e7bb84-a44d-44c1-90b7-6995a92ad43c"
+
 var job_definition interface{}
 
 var jobRegistrationInfo = struct {
@@ -93,7 +94,7 @@ func main() {
 	if c, err := restclient.CreateClientCertificate(configuration.ConsumerCertPath, configuration.ConsumerKeyPath); err == nil {
 		cert = c
 	} else {
-		log.Fatalf("Stopping producer due to error: %v", err)
+		log.Fatalf("Stopping consumer due to error: %v", err)
 	}
 	client = restclient.CreateRetryClient(cert)
 
