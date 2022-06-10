@@ -50,6 +50,23 @@
       "message": "stage-release",
       "revId": "2ec55ebc0dc5821ccaab354ea31b6a1ace1d41c7",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b4e8d3c_7f17ad36",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000201
+      },
+      "writtenOn": "2022-06-10T05:26:30Z",
+      "side": 1,
+      "message": "stage-release",
+      "revId": "2ec55ebc0dc5821ccaab354ea31b6a1ace1d41c7",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
