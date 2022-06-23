@@ -2,11 +2,8 @@
 .. SPDX-License-Identifier: CC-BY-4.0
 .. Copyright (C) 2021 Nordix
 
-.. |archpic| image:: ./images/nonrtric-architecture-E.png
-  :alt: Image: O-RAN SC - NONRTRIC Overall Architecture
-
-DMaaP Adapter
-~~~~~~~~~~~~~
+O-RU Fronthaul Recovery Use Case
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ************
 Introduction
@@ -20,6 +17,8 @@ Non-RT RIC provides multiple implementation versions of the recovery part of the
 script, one utilizing the ONAP Policy Framework, and one Go version that utilizes Information Coordination Service (ICS).
 
 The code is available in the `use case repo <https://gerrit.o-ran-sc.org/r/gitweb?p=nonrtric%2Frapp%2Forufhrecovery.git;a=summary>`_
+
+This product is a part of :doc:`NONRTRIC <nonrtric:index>`.
 
 Standalone Script Solution
 ++++++++++++++++++++++++++

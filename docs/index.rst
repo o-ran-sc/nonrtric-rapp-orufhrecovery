@@ -2,8 +2,8 @@
 .. SPDX-License-Identifier: CC-BY-4.0
 .. Copyright (C) 2021 Nordix
 
-Non-RT RIC
-==========
+Non-RT RIC O-RU Fronthaul Recovery Use Case
+===========================================
 
 .. toctree::
    :maxdepth: 2
@@ -11,5 +11,3 @@ Non-RT RIC
 
    ./overview.rst
    ./release-notes.rst
-
-* :ref:`search`
