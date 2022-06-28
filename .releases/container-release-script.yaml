@@ -1,0 +1,10 @@
+---
+distribution_type: container
+container_release_tag: 1.1.0
+container_pull_registry: nexus3.o-ran-sc.org:10004
+container_push_registry: nexus3.o-ran-sc.org:10002
+project: nonrtric
+ref: 2ec55ebc0dc5821ccaab354ea31b6a1ace1d41c7
+containers:
+    - name: nonrtric-rapp-orufhrecovery-consumer
+      version: 1.1.0
