@@ -47,10 +47,3 @@ ICS Consumer Solution
 
 The ICS Consumer solution is implemented in Go and instead of polling MR itself, it registers as a consumer of the "STD_Fault_Messages" job in ICS.
 
-O-DU Slice Assurance
---------------------
-
-A very simplified closed-loop rApp use case to re-prioritize a RAN slice's radio resource allocation priority if sufficient throughput cannot be maintained. Not intended to to be 'real-world'.
-
-The Go implementation of the solution can be found in
-this `link <https://gerrit.o-ran-sc.org/r/gitweb?p=nonrtric/rapp/ransliceassurance.git;a=tree;f=smoversion>`__.
