@@ -1,3 +1,5 @@
+# name: Copyright (C) 2021-2022 Nordix Foundation. Licensed under the Apache License.
+# url: http://www.apache.org/licenses/LICENSE-2.0
 ---
 project: 'nonrtric_rapp_orufhrecovery'
 project_creation_date: '2022-02-01'
