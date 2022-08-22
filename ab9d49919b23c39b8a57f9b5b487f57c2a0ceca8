@@ -45,6 +45,30 @@
       },
       "revId": "ab9d49919b23c39b8a57f9b5b487f57c2a0ceca8",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ad74432_675e47e0",
+        "filename": "scriptversion/docker-compose-controlloop/config/db/create-db.sql",
+        "patchSetId": 8
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1001815
+      },
+      "writtenOn": "2022-08-22T16:23:10Z",
+      "side": 1,
+      "message": "Comments are changed, and blank lines are removed.",
+      "parentUuid": "dd98b2aa_dc5df50a",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 1
+      },
+      "revId": "ab9d49919b23c39b8a57f9b5b487f57c2a0ceca8",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
