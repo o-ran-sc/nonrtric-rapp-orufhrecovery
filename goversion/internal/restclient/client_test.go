@@ -33,7 +33,7 @@ import (
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
-	"oransc.org/usecase/oruclosedloop/mocks"
+	"oransc.org/usecase/oruclosedloop/internal/restclient/mocks"
 )
 
 func TestRequestError_Error(t *testing.T) {

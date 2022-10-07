@@ -39,7 +39,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"oransc.org/usecase/oruclosedloop/internal/config"
 	"oransc.org/usecase/oruclosedloop/internal/linkfailure"
-	"oransc.org/usecase/oruclosedloop/mocks"
+	repomock "oransc.org/usecase/oruclosedloop/internal/repository/mocks"
+	"oransc.org/usecase/oruclosedloop/internal/restclient/mocks"
 )
 
 func Test_init(t *testing.T) {
@@ -150,7 +151,7 @@ func Test_initializeLookupService(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			mockCsvFileHelper := &mocks.CsvFileHelper{}
+			mockCsvFileHelper := &repomock.CsvFileHelper{}
 			mockCsvFileHelper.On("GetCsvFromFile", mock.Anything).Return(tt.args.mockReturn, tt.args.mockReturnError)
 
 			err := initializeLookupService(mockCsvFileHelper, tt.args.csvFile)

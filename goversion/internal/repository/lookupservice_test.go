@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"oransc.org/usecase/oruclosedloop/mocks"
+	"oransc.org/usecase/oruclosedloop/internal/repository/mocks"
 )
 
 func TestIdNotMappedError(t *testing.T) {

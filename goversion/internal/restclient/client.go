@@ -43,6 +43,7 @@ func (e RequestError) Error() string {
 }
 
 // HTTPClient interface
+//go:generate mockery --name HTTPClient
 type HTTPClient interface {
 	Get(url string) (*http.Response, error)
 

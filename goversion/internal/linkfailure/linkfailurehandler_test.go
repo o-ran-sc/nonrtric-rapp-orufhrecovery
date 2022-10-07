@@ -34,8 +34,9 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"oransc.org/usecase/oruclosedloop/internal/repository"
+	repomock "oransc.org/usecase/oruclosedloop/internal/repository/mocks"
+	"oransc.org/usecase/oruclosedloop/internal/restclient/mocks"
 	"oransc.org/usecase/oruclosedloop/internal/ves"
-	"oransc.org/usecase/oruclosedloop/mocks"
 )
 
 func Test_MessagesHandlerWithLinkFailure(t *testing.T) {
@@ -54,7 +55,7 @@ func Test_MessagesHandlerWithLinkFailure(t *testing.T) {
 		StatusCode: http.StatusOK,
 	}, nil)
 
-	lookupServiceMock := mocks.LookupService{}
+	lookupServiceMock := repomock.LookupService{}
 
 	lookupServiceMock.On("GetODuID", mock.Anything).Return("O-DU-1122", nil)
 
@@ -115,7 +116,7 @@ func Test_MessagesHandlerWithClearLinkFailure(t *testing.T) {
 		log.SetOutput(os.Stderr)
 	}()
 
-	lookupServiceMock := mocks.LookupService{}
+	lookupServiceMock := repomock.LookupService{}
 
 	lookupServiceMock.On("GetODuID", mock.Anything).Return("O-DU-1122", nil)
 
@@ -142,7 +143,7 @@ func Test_MessagesHandlerWithLinkFailureUnmappedORU(t *testing.T) {
 		log.SetOutput(os.Stderr)
 	}()
 
-	lookupServiceMock := mocks.LookupService{}
+	lookupServiceMock := repomock.LookupService{}
 
 	lookupServiceMock.On("GetODuID", mock.Anything).Return("", repository.IdNotMappedError{
 		Id: "ERICSSON-O-RU-11220",

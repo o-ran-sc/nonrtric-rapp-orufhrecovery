@@ -25,6 +25,7 @@ import (
 	"os"
 )
 
+//go:generate mockery --name CsvFileHelper
 type CsvFileHelper interface {
 	GetCsvFromFile(name string) ([][]string, error)
 }

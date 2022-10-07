@@ -32,6 +32,7 @@ func (inme IdNotMappedError) Error() string {
 	return fmt.Sprintf("O-RU-ID: %v not mapped.", inme.Id)
 }
 
+//go:generate mockery --name LookupService
 type LookupService interface {
 	Init() error
 	GetODuID(oRuId string) (string, error)
