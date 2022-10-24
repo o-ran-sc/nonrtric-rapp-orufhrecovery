@@ -25,6 +25,7 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GO111MODULE=on
 go version
 cd goversion/
+pwd
 
 # install the go coverage tool helper
 go install github.com/ory/go-acc
