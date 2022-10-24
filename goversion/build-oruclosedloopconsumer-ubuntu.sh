@@ -27,7 +27,7 @@ go version
 cd goversion/
 
 # install the go coverage tool helper
-go get -v github.com/ory/go-acc
+go install github.com/ory/go-acc
 
 go get github.com/stretchr/testify/mock@v1.7.0
 
