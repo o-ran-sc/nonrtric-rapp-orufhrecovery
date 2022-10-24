@@ -31,6 +31,8 @@ go get -v github.com/ory/go-acc
 
 go get github.com/stretchr/testify/mock@v1.7.0
 
+find ~ -name go-acc
+
 go-acc ./... --ignore mocks
 
 sed -i -e 's/oransc\.org\/usecase\/oruclosedloop/goversion/' coverage.txt
