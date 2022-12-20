@@ -1,7 +1,7 @@
 from docs_conf.conf import *
 
 #branch configuration
-branch = 'f-release'
+branch = 'g-release'
 
 linkcheck_ignore = [
     'http://localhost.*',
