@@ -1,6 +1,6 @@
-# O-RAN-SC Non-RealTime RIC O-RU O-DU Link Failure Consumer
+# O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery Consumer
 
-This consumer creates a job of type `STD_Fault_Messages` in the Information Coordinator Service (ICS). When it recieves messages, it checks if they are link failure messages. If they are, it checks if the event severity is other than normal. If so, it looks up the O-DU ID mapped to the O-RU where the message originates from and sends a configuration message to the O-DU through SDNC. If the event severity is normal, then it logs, on `Debug` level, that the link failure has been cleared.
+This consumer creates a job of type `STD_Fault_Messages` in the Information Coordinator Service (ICS). When it receives messages, it checks if they are link failure messages. If they are, it checks if the event severity is other than normal. If so, it looks up the O-DU ID mapped to the O-RU where the message originates from and sends a configuration message to the O-DU through SDNC. If the event severity is normal, then it logs, on `Debug` level, that the link failure has been cleared.
 
 ## Configuration
 
@@ -19,7 +19,7 @@ The consumer takes a number of environment variables, described below, as config
 
 Any of the addresses used by this product can be configured to use https, by specifying it as the scheme of the address URI. The client will not use server certificate verification. The consumer's own callback will only listen to the scheme configured in the scheme of the consumer host address.
 
-The configured public key and cerificate shall be PEM-encoded. A self signed certificate and key are provided in the `security` folder of the project. These files should be replaced for production. To generate a self signed key and certificate, use the example code below:
+The configured public key and certificate shall be PEM-encoded. A self signed certificate and key are provided in the `security` folder of the project. These files should be replaced for production. To generate a self signed key and certificate, use the example code below:
 
     openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 
@@ -33,24 +33,28 @@ The creation of the job is not done when the consumer is started. Instead the co
 If the consumer is shut down with a SIGTERM, it will also delete the job before exiting.
 
 There is also a status call provided in the REST API. This will return the running status of the consumer as JSON.
+
 >- /status  {"status": "started/stopped"}
 
 ## Development
 
 To make it easy to test during development of the consumer, three stubs are provided in the `stub` folder.
 
-A producer stub, under the `producer` folder, that stubs the producer and pushes an array with one message with `eventSeverity` alternating between `NORMAL` and `CRITICAL`. The stub does not start to send messages until it recieves a create job call from the ICS stub. When a delete job call comes from the ICS stub it stops sending messages. To build and start the stub, do the following:
+A producer stub, under the `producer` folder, that stubs the producer and pushes an array with one message with `eventSeverity` alternating between `NORMAL` and `CRITICAL`. The stub does not start to send messages until it receives a create job call from the ICS stub. When a delete job call comes from the ICS stub it stops sending messages. To build and start the stub, do the following:
+
 >1. cd stub/producer
 >2. go build
 >3. ./producer
 
 An ICS stub, under the `ics` folder, that listens for create and delete job calls from the consumer. When it gets a call it calls the producer stub with the correct create or delete call and the provided job ID. By default, it listens to the port `8083`, but his can be overridden by passing a `-port [PORT]` flag when starting the stub. To build and start the stub, do the following:
+
 >1. cd stub/ics
 >2. go build
 >3. ./ics
 
 
 An SNDR stub, under the `sdnr` folder, that at startup will listen for REST calls and print the body of them. By default, it listens to the port `3904`, but his can be overridden by passing a `-port [PORT]` flag when starting the stub. To build and start the stub, do the following:
+
 >1. cd stub/sdnr
 >2. go build
 >3. ./sdnr

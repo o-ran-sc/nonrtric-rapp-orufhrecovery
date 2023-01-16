@@ -187,7 +187,7 @@ func Test_createClientCertificate(t *testing.T) {
 		wantErr  error
 	}{
 		{
-			name: "Paths to cert info ok should return cerftificate",
+			name: "Paths to cert info ok should return certificate",
 			args: args{
 				certPath: "../../security/consumer.crt",
 				keyPath:  "../../security/consumer.key",
@@ -200,7 +200,7 @@ func Test_createClientCertificate(t *testing.T) {
 				certPath: "wrong_cert",
 				keyPath:  "wrong_key",
 			},
-			wantErr: fmt.Errorf("cannot create x509 keypair from cert file wrong_cert and key file wrong_key due to: open wrong_cert: no such file or directory"),
+			wantErr: fmt.Errorf("cannot create x509 key pair from cert file wrong_cert and key file wrong_key due to: open wrong_cert: no such file or directory"),
 		},
 	}
 	for _, tt := range tests {

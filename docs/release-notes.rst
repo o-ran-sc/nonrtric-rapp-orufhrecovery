@@ -7,7 +7,7 @@ Release-Notes
 =============
 
 
-This document provides the release notes for the Non-RT RIC O-RU Front-Haul Recovery Use Case.
+This document provides the release notes for the Non-RT RIC O-RU Fronthaul Recovery Use Case.
 
 Version history
 ===============
@@ -33,7 +33,7 @@ Release Data
 E Release
 ---------
 +-----------------------------+---------------------------------------------------+
-| **Project**                 | Non-RT RIC O-RU Front-Haul Recovery               |
+| **Project**                 | Non-RT RIC O-RU Fronthaul Recovery                |
 |                             |                                                   |
 +-----------------------------+---------------------------------------------------+
 | **Repo/commit-ID**          | nonrtric/b472c167413a55a42fc7bfa08d2138f967a204fb |
@@ -52,7 +52,7 @@ E Release
 E Maintenance Release
 ---------------------
 +-----------------------------+---------------------------------------------------+
-| **Project**                 | Non-RT RIC O-RU Front-Haul Recovery               |
+| **Project**                 | Non-RT RIC O-RU Fronthaul Recovery                |
 |                             |                                                   |
 +-----------------------------+---------------------------------------------------+
 | **Repo/commit-ID**          | nonrtric/4df1f9ca4cd1ebc21e0c5ea57bcb0b7ef096d067 |
@@ -71,7 +71,7 @@ E Maintenance Release
 F Release
 ---------
 +-----------------------------+---------------------------------------------------+
-| **Project**                 | Non-RT RIC O-RU Front-Haul Recovery               |
+| **Project**                 | Non-RT RIC O-RU Fronthaul Recovery                |
 |                             |                                                   |
 +-----------------------------+---------------------------------------------------+
 | **Repo/commit-ID**          | nonrtric/rapp/orufhrecovery                       |
