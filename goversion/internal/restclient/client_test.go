@@ -187,7 +187,7 @@ func Test_createClientCertificate(t *testing.T) {
 		wantErr  error
 	}{
 		{
-			name: "Paths to cert info ok should return cerftificate",
+			name: "Paths to cert info ok should return certificate",
 			args: args{
 				certPath: "../../security/consumer.crt",
 				keyPath:  "../../security/consumer.key",
