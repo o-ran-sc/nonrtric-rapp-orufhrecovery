@@ -3,7 +3,7 @@
 .. Copyright (C) 2021 Nordix
 
 Non-RT RIC O-RU Fronthaul Recovery Use Case
-===========================================
+============================================
 
 .. toctree::
    :maxdepth: 2

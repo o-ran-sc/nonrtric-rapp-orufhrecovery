@@ -1,8 +1,8 @@
-# Use case Link Failure
+# Non-RealTime RIC O-RU Fronthaul Recovery
 
 ## General
 
-The Link Failure use case test provides a python script that regularly polls DMaaP Message Router (MR) for "CUS Link Failure"
+The script version of the O-RU Fronthaul Recovery use case provides a python script that regularly polls DMaaP Message Router (MR) for "CUS Link Failure"
 messages.
 
 When such a message appears with the "eventSeverity" set to anything but "NORMAL", a configuration change message with the
@@ -11,7 +11,7 @@ When such a message appears with the "eventSeverity" set to anything but "NORMAL
 When such a message appears with the "eventSeverity" set to "NORMAL" a printout will be made to signal that the
 alarm has been cleared, provided that the verbose option has been used when the test was started.
 
-## Prerequisits
+## Prerequisites
 
 To run this script Python3 needs to be installed. To install the script's dependencies, run the following command from
 the `app` folder: `pip install -r requirements.txt`
@@ -58,7 +58,7 @@ using the command, with available params listed:
 
 ## Use docker-compose
 
-Go to the `docker-compose/` folder and run `bash start.sh`.
+Go to the `docker-compose/` folder and run `bash start.sh`, see [control loop version](docker-compose-controlloop/README.md).
 
 This scripts will start up four components:
 dmaap-mr

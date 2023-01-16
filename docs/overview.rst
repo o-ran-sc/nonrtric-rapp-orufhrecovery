@@ -3,13 +3,13 @@
 .. Copyright (C) 2021 Nordix
 
 O-RU Fronthaul Recovery Use Case
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ************
 Introduction
 ************
 
-This use case is a non-real-world closed-loop use case to demonstrate automated recovery when the front-haul connection between an O-DU and O-RU is reset.
+This use case is a non-real-world closed-loop use case to demonstrate automated recovery when the fronthaul connection between an O-DU and O-RU is reset.
 An application in the NONRTRIC senses the fault from the O-RU (O1-FM) and initiates a NETCONF reset operation (O1-CM) using the OAM controller.
 More details about the use case can be found on the O-RAN SC wiki: `RSAC <https://wiki.o-ran-sc.org/pages/viewpage.action?pageId=20878423>`_ and `OAM <https://wiki.o-ran-sc.org/display/OAM/Closed+loop+use+case>`_.
 

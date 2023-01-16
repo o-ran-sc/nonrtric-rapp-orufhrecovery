@@ -42,7 +42,6 @@ func (e RequestError) Error() string {
 	return fmt.Sprintf("error response with status: %v and body: %v", e.StatusCode, string(e.Body))
 }
 
-// HTTPClient interface
 //go:generate mockery --name HTTPClient
 type HTTPClient interface {
 	Get(url string) (*http.Response, error)
@@ -66,7 +65,7 @@ func CreateClientCertificate(certPath string, keyPath string) (tls.Certificate, 
 	if cert, err := tls.LoadX509KeyPair(certPath, keyPath); err == nil {
 		return cert, nil
 	} else {
-		return tls.Certificate{}, fmt.Errorf("cannot create x509 keypair from cert file %s and key file %s due to: %v", certPath, keyPath, err)
+		return tls.Certificate{}, fmt.Errorf("cannot create x509 key pair from cert file %s and key file %s due to: %v", certPath, keyPath, err)
 	}
 }
 
