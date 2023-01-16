@@ -22,7 +22,7 @@
 
 # O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery rApp
 
-There are three implementations available for this rApp.
+There are two implementations available for this rApp.
 
 - The Go version that uses Information Coordinator Service (ICS) to create a job that provides info about the Fronthaul state, see [Go version](goversion/README.md).
 - The script version that polls DMaaP Message Router for info about the Fronthaul state, see [script version](scriptversion/README.md).
