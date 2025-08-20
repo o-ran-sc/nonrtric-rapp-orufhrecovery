@@ -4,6 +4,7 @@
    O-RAN-SC
    %%
    Copyright (C) 2023: Nordix Foundation
+   Copyright 2023-2025: OpenInfra Foundation Europe
    %%
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -20,7 +21,17 @@
 
 -->
 
-# O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery rApp
+# O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery rApp (Experimental O-RAN-SC Module)
+
+![Status: Deprecated](https://img.shields.io/badge/status-deprecated-red)
+![Status: Experimental](https://img.shields.io/badge/CVE%20Support-none-lightgrey)
+
+> [!CAUTION]
+> **Deprecated**
+>
+> This repository is no longer actively maintained or supported.
+>
+> Please refer to the [o-ran-sc/nonrtric-plt-rappmanager](https://github.com/o-ran-sc/nonrtric-plt-rappmanager) repository for the actively maintained rApp Manager and rApps.
 
 There are two implementations available for this rApp.
 

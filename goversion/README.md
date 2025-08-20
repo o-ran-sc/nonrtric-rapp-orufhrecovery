@@ -1,4 +1,14 @@
-# O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery Consumer
+# O-RAN-SC Non-RealTime RIC O-RU Fronthaul Recovery Consumer (Experimental O-RAN-SC Module)
+
+![Status: Deprecated](https://img.shields.io/badge/status-deprecated-red)
+![Status: Experimental](https://img.shields.io/badge/CVE%20Support-none-lightgrey)
+
+> [!CAUTION]
+> **Deprecated**
+>
+> This repository is no longer actively maintained or supported.
+>
+> Please refer to the [o-ran-sc/nonrtric-plt-rappmanager](https://github.com/o-ran-sc/nonrtric-plt-rappmanager) repository for the actively maintained rApp Manager and rApps.
 
 This consumer creates a job of type `STD_Fault_Messages` in the Information Coordinator Service (ICS). When it receives messages, it checks if they are link failure messages. If they are, it checks if the event severity is other than normal. If so, it looks up the O-DU ID mapped to the O-RU where the message originates from and sends a configuration message to the O-DU through SDNC. If the event severity is normal, then it logs, on `Debug` level, that the link failure has been cleared.
 
