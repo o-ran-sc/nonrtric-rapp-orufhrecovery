@@ -1,5 +1,52 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "627f8529_333abf28",
+        "filename": "DEPRECATED.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000103
+      },
+      "writtenOn": "2025-08-21T09:32:52Z",
+      "side": 1,
+      "message": "Perfect. Thanks.",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 12
+      },
+      "revId": "3f63d92e539141c087c843d773843cab36c7a84d",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4320928f_f2bd1a5a",
+        "filename": "DEPRECATED.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000103
+      },
+      "writtenOn": "2025-08-21T09:32:52Z",
+      "side": 1,
+      "message": "PS: This link is dead. \n../LICENSES   -\u003e LICENSE.txt",
+      "range": {
+        "startLine": 28,
+        "startChar": 93,
+        "endLine": 28,
+        "endChar": 104
+      },
+      "revId": "3f63d92e539141c087c843d773843cab36c7a84d",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
