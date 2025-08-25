@@ -45,6 +45,30 @@
       },
       "revId": "3f63d92e539141c087c843d773843cab36c7a84d",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "021ee9ef_9129e26a",
+        "filename": "DEPRECATED.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1001877
+      },
+      "writtenOn": "2025-08-25T09:32:55Z",
+      "side": 1,
+      "message": "Fixed in https://gerrit.o-ran-sc.org/r/c/nonrtric/rapp/orufhrecovery/+/14837",
+      "parentUuid": "4320928f_f2bd1a5a",
+      "range": {
+        "startLine": 28,
+        "startChar": 93,
+        "endLine": 28,
+        "endChar": 104
+      },
+      "revId": "3f63d92e539141c087c843d773843cab36c7a84d",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ],
   "submitRequirementResults": [
