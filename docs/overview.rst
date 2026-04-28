@@ -11,7 +11,7 @@ Introduction
 
 This use case is a non-real-world closed-loop use case to demonstrate automated recovery when the fronthaul connection between an O-DU and O-RU is reset.
 An application in the NONRTRIC senses the fault from the O-RU (O1-FM) and initiates a NETCONF reset operation (O1-CM) using the OAM controller.
-More details about the use case can be found on the O-RAN SC wiki: `RSAC <https://wiki.o-ran-sc.org/pages/viewpage.action?pageId=20878423>`_ and `OAM <https://wiki.o-ran-sc.org/display/OAM/Closed+loop+use+case>`_.
+More details about the use case can be found on the O-RAN SC wiki: `OAM Closed loop use case <https://lf-o-ran-sc.atlassian.net/wiki/spaces/OAM/pages/14680350/Closed+loop+use+case>`_.
 
 Non-RT RIC provides multiple implementation versions of the recovery part of the use case. One in the form of a python
 script, one utilizing the ONAP Policy Framework, and one Go version that utilizes Information Coordination Service (ICS).
@@ -32,7 +32,7 @@ All parts are Dockerized and can be started as individual containers, in the sam
 ONAP Policy Solution
 ++++++++++++++++++++
 
-There is also another solution for performing the front-haul recovery that is based on `ONAP Policy Framework <https://wiki.onap.org/display/DW/Policy+Framework+Project>`_.
+There is also another solution for performing the front-haul recovery that is based on `ONAP Policy Framework <https://lf-onap.atlassian.net/wiki/spaces/DW/pages/16230647/Policy+Framework+Project>`_.
 A TOSCA Policy has been created that listens to DMaaP Message Router, makes a decision on an appropriate remedy and then signals the decision as a configuration change message via
 REST call to the OAM controller.
 
@@ -40,7 +40,7 @@ There is a `docker-compose <https://gerrit.o-ran-sc.org/r/gitweb?p=nonrtric.git;
 in the nonrtric repo for bringing up the complete standalone version of ONAP Policy Framework.
 
 The detailed instructions for deploying and running this policy are provided in
-the `wiki <https://wiki.o-ran-sc.org/display/RICNR/O-RU+Fronthaul+Recovery+usecase>`_.
+the `wiki <https://lf-o-ran-sc.atlassian.net/wiki/spaces/RICNR/pages/15074820/O-RU+Fronthaul+Recovery+usecase>`_.
 
 ICS Consumer Solution
 +++++++++++++++++++++
