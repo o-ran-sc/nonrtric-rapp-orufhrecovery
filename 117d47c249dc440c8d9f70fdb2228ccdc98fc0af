@@ -1,0 +1,10 @@
+Code-Review+1: Saul Gill <saul.gill@est.tech>
+Code-Review+2: John Keeney <john.keeney@est.tech>
+Verified+1: ORAN Required GHA <releng+oran.required.gha@linuxfoundation.org>
+Verified+1: John Keeney <john.keeney@est.tech>
+Submitted-by: John Keeney <john.keeney@est.tech>
+Submitted-at: Fri, 29 May 2026 12:48:07 +0000
+Reviewed-on: https://gerrit.o-ran-sc.org/r/c/nonrtric/rapp/orufhrecovery/+/15600
+Comments-Total: 2
+Project: nonrtric/rapp/orufhrecovery
+Branch: refs/heads/master
